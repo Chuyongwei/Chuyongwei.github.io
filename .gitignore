@@ -1,0 +1,7 @@
+.pdf
+.docx
+.doc
+# */.git/
+
+/Temp/
+node_modules/
