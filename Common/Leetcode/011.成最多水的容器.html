@@ -1,0 +1,3347 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>011.成最多水的容器 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="015. 三数之和.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">CC++</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../CC++/C++.html">
+            
+                <a href="../../CC++/C++.html">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    CSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../CC++/CSP/201703-1分蛋糕.html">
+            
+                <a href="../../CC++/CSP/201703-1分蛋糕.html">
+            
+                    
+                    1分蛋糕
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../CC++/CSP/201709-2公共钥匙盒.html">
+            
+                <a href="../../CC++/CSP/201709-2公共钥匙盒.html">
+            
+                    
+                    2公共钥匙盒
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../CC++/CSP/201812-1小明上学.html">
+            
+                <a href="../../CC++/CSP/201812-1小明上学.html">
+            
+                    
+                    1小明上学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../CC++/CSP/201812-2小明放学.html">
+            
+                <a href="../../CC++/CSP/201812-2小明放学.html">
+            
+                    
+                    2小明放学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../CC++/CSP/201903-1小中大.html">
+            
+                <a href="../../CC++/CSP/201903-1小中大.html">
+            
+                    
+                    1小中大
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../CC++/CSP/201903-2二十四点.html">
+            
+                <a href="../../CC++/CSP/201903-2二十四点.html">
+            
+                    
+                    2二十四点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../CC++/CSP/201909-1小明种苹果.html">
+            
+                <a href="../../CC++/CSP/201909-1小明种苹果.html">
+            
+                    
+                    1小明种苹果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../../CC++/CSP/201909-2小明种苹果（续）.html">
+            
+                <a href="../../CC++/CSP/201909-2小明种苹果（续）.html">
+            
+                    
+                    2小明种苹果（续）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../../CC++/CSP/201912-1报数.html">
+            
+                <a href="../../CC++/CSP/201912-1报数.html">
+            
+                    
+                    1报数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../../CC++/CSP/201912-2回收站选址.html">
+            
+                <a href="../../CC++/CSP/201912-2回收站选址.html">
+            
+                    
+                    2回收站选址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../../CC++/CSP/202006-1线性分类器.html">
+            
+                <a href="../../CC++/CSP/202006-1线性分类器.html">
+            
+                    
+                    1线性分类器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../../CC++/CSP/202006-2稀疏向量.html">
+            
+                <a href="../../CC++/CSP/202006-2稀疏向量.html">
+            
+                    
+                    2稀疏向量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../../CC++/CSP/202006-3Markdown渲染器.html">
+            
+                <a href="../../CC++/CSP/202006-3Markdown渲染器.html">
+            
+                    
+                    3Markdown渲染器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../../CC++/CSP/202006-41246.html">
+            
+                <a href="../../CC++/CSP/202006-41246.html">
+            
+                    
+                    41246
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    HDU
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../CC++/HDU/1013.Digital Roots .html">
+            
+                <a href="../../CC++/HDU/1013.Digital Roots .html">
+            
+                    
+                    1013.Digital Roots 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    HOJ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../CC++/HOJ/1004.html">
+            
+                <a href="../../CC++/HOJ/1004.html">
+            
+                    
+                    1004
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../CC++/HOJ/1006.Weird Clock.html">
+            
+                <a href="../../CC++/HOJ/1006.Weird Clock.html">
+            
+                    
+                    1006.Weird Clock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../CC++/HOJ/Array.html">
+            
+                <a href="../../CC++/HOJ/Array.html">
+            
+                    
+                    Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../CC++/HOJ/Untitled.html">
+            
+                <a href="../../CC++/HOJ/Untitled.html">
+            
+                    
+                    Untitled
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Zoj
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../CC++/zoj/1020.Puzzle Out.html">
+            
+                <a href="../../CC++/zoj/1020.Puzzle Out.html">
+            
+                    
+                    1020.Puzzle Out
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../CC++/zoj/1037.Gridland.html">
+            
+                <a href="../../CC++/zoj/1037.Gridland.html">
+            
+                    
+                    1037.Gridland
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../CC++/zoj/Untitled.html">
+            
+                <a href="../../CC++/zoj/Untitled.html">
+            
+                    
+                    Untitled
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    作业
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../CC++/作业/Untitled.html">
+            
+                <a href="../../CC++/作业/Untitled.html">
+            
+                    
+                    Untitled
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" >
+            
+                <span>
+            
+                    
+                    算法分析
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../../CC++/作业/算法分析/实验一.html">
+            
+                <a href="../../CC++/作业/算法分析/实验一.html">
+            
+                    
+                    实验一
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" >
+            
+                <span>
+            
+                    
+                    编译原理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="../../CC++/作业/编译原理/实验一.html">
+            
+                <a href="../../CC++/作业/编译原理/实验一.html">
+            
+                    
+                    实验一
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Common</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Leetcode
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.1.1" data-path="011.成最多水的容器.html">
+            
+                <a href="011.成最多水的容器.html">
+            
+                    
+                    011.成最多水的容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="015. 三数之和.html">
+            
+                <a href="015. 三数之和.html">
+            
+                    
+                    015. 三数之和
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="025. K 个一组翻转链表.html">
+            
+                <a href="025. K 个一组翻转链表.html">
+            
+                    
+                    025. K 个一组翻转链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="239.html">
+            
+                <a href="239.html">
+            
+                    
+                    239
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="239.滑动窗口最大值.html">
+            
+                <a href="239.滑动窗口最大值.html">
+            
+                    
+                    239.滑动窗口最大值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="283移动零.html">
+            
+                <a href="283移动零.html">
+            
+                    
+                    283移动零
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="84.柱状图中最大矩形.html">
+            
+                <a href="84.柱状图中最大矩形.html">
+            
+                    
+                    84.柱状图中最大矩形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" >
+            
+                <span>
+            
+                    
+                    Array
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.8.1" data-path="Array/11.盛最多水的容器.html">
+            
+                <a href="Array/11.盛最多水的容器.html">
+            
+                    
+                    11.盛最多水的容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.2" data-path="Array/121.买卖股票的最佳时机.html">
+            
+                <a href="Array/121.买卖股票的最佳时机.html">
+            
+                    
+                    121.买卖股票的最佳时机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.3" data-path="Array/122.买卖股票的最佳时机.html">
+            
+                <a href="Array/122.买卖股票的最佳时机.html">
+            
+                    
+                    122.买卖股票的最佳时机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.4" data-path="Array/123.买股票的最佳时机.html">
+            
+                <a href="Array/123.买股票的最佳时机.html">
+            
+                    
+                    123.买股票的最佳时机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.5" data-path="Array/128.最长连续排序.html">
+            
+                <a href="Array/128.最长连续排序.html">
+            
+                    
+                    128.最长连续排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.6" data-path="Array/134.加油站.html">
+            
+                <a href="Array/134.加油站.html">
+            
+                    
+                    134.加油站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.7" data-path="Array/164.最大间距.html">
+            
+                <a href="Array/164.最大间距.html">
+            
+                    
+                    164.最大间距
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.8" data-path="Array/189旋转数组.html">
+            
+                <a href="Array/189旋转数组.html">
+            
+                    
+                    189旋转数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.9" data-path="Array/217.存在重复元素.html">
+            
+                <a href="Array/217.存在重复元素.html">
+            
+                    
+                    217.存在重复元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.10" data-path="Array/26.删除排序数组中的重复项.html">
+            
+                <a href="Array/26.删除排序数组中的重复项.html">
+            
+                    
+                    26.删除排序数组中的重复项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.11" data-path="Array/27.移除元素.html">
+            
+                <a href="Array/27.移除元素.html">
+            
+                    
+                    27.移除元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.12" data-path="Array/274.H指数.html">
+            
+                <a href="Array/274.H指数.html">
+            
+                    
+                    274.H指数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.13" data-path="Array/287.寻找重复数.html">
+            
+                <a href="Array/287.寻找重复数.html">
+            
+                    
+                    287.寻找重复数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.14" data-path="Array/299.猜数字游戏.html">
+            
+                <a href="Array/299.猜数字游戏.html">
+            
+                    
+                    299.猜数字游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.15" data-path="Array/327.区间的个数.html">
+            
+                <a href="Array/327.区间的个数.html">
+            
+                    
+                    327.区间的个数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.16" data-path="Array/334.递增的三元序列.html">
+            
+                <a href="Array/334.递增的三元序列.html">
+            
+                    
+                    334.递增的三元序列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.17" data-path="Array/41.缺失的第一个正数.html">
+            
+                <a href="Array/41.缺失的第一个正数.html">
+            
+                    
+                    41.缺失的第一个正数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.18" data-path="Array/42.接雨水.html">
+            
+                <a href="Array/42.接雨水.html">
+            
+                    
+                    42.接雨水
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.19" data-path="Array/45.跳跃游戏.html">
+            
+                <a href="Array/45.跳跃游戏.html">
+            
+                    
+                    45.跳跃游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.20" data-path="Array/55.跳跃游戏.html">
+            
+                <a href="Array/55.跳跃游戏.html">
+            
+                    
+                    55.跳跃游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.21" data-path="Array/80.删除排序数组中的重复项.html">
+            
+                <a href="Array/80.删除排序数组中的重复项.html">
+            
+                    
+                    80.删除排序数组中的重复项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.22" data-path="Array/付费.html">
+            
+                <a href="Array/付费.html">
+            
+                    
+                    付费
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" >
+            
+                <span>
+            
+                    
+                    Tree
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.9.1" data-path="Tree/102.二叉树的层级遍历.html">
+            
+                <a href="Tree/102.二叉树的层级遍历.html">
+            
+                    
+                    102.二叉树的层级遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9.2" data-path="Tree/144.二叉树的前序遍历.html">
+            
+                <a href="Tree/144.二叉树的前序遍历.html">
+            
+                    
+                    144.二叉树的前序遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9.3" data-path="Tree/145.二叉树的后序遍历.html">
+            
+                <a href="Tree/145.二叉树的后序遍历.html">
+            
+                    
+                    145.二叉树的后序遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9.4" data-path="Tree/94,二叉树的中序遍历.html">
+            
+                <a href="Tree/94,二叉树的中序遍历.html">
+            
+                    
+                    94,二叉树的中序遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../Linux.html">
+            
+                <a href="../Linux.html">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../git.html">
+            
+                <a href="../git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../技巧.html">
+            
+                <a href="../技巧.html">
+            
+                    
+                    技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../算法.html">
+            
+                <a href="../算法.html">
+            
+                    
+                    算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../视频.html">
+            
+                <a href="../视频.html">
+            
+                    
+                    视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Front</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    CSS
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../Front/CSS/CSS3.html">
+            
+                <a href="../../Front/CSS/CSS3.html">
+            
+                    
+                    CSS3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                    HTML
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../../Front/HTML/html.html">
+            
+                <a href="../../Front/HTML/html.html">
+            
+                    
+                    Html
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../../Front/HTML/html5.html">
+            
+                <a href="../../Front/HTML/html5.html">
+            
+                    
+                    Html5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <span>
+            
+                    
+                    JavaScript
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../../Front/JavaScript/Data Structures and Algorithms.html">
+            
+                <a href="../../Front/JavaScript/Data Structures and Algorithms.html">
+            
+                    
+                    Data Structures And Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" >
+            
+                <span>
+            
+                    
+                    ES6
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.2.1" data-path="../../Front/JavaScript/ES6/ES6 Proxies in practice.html">
+            
+                <a href="../../Front/JavaScript/ES6/ES6 Proxies in practice.html">
+            
+                    
+                    ES6 Proxies In Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.2" data-path="../../Front/JavaScript/ES6/ES6语法.html">
+            
+                <a href="../../Front/JavaScript/ES6/ES6语法.html">
+            
+                    
+                    ES6语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.3" data-path="../../Front/JavaScript/ES6/语法.html">
+            
+                <a href="../../Front/JavaScript/ES6/语法.html">
+            
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../../Front/JavaScript/JavaScipt.html">
+            
+                <a href="../../Front/JavaScript/JavaScipt.html">
+            
+                    
+                    JavaScipt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.4" data-path="../../Front/JavaScript/Jquery.html">
+            
+                <a href="../../Front/JavaScript/Jquery.html">
+            
+                    
+                    Jquery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.5" data-path="../../Front/JavaScript/typescript.html">
+            
+                <a href="../../Front/JavaScript/typescript.html">
+            
+                    
+                    Typescript
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <span>
+            
+                    
+                    React.Js
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../../Front/React.js/redux.html">
+            
+                <a href="../../Front/React.js/redux.html">
+            
+                    
+                    Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="../../Front/React.js/起步.html">
+            
+                <a href="../../Front/React.js/起步.html">
+            
+                    
+                    起步
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" >
+            
+                <span>
+            
+                    
+                    Vue
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="../../Front/Vue/Untitled.html">
+            
+                <a href="../../Front/Vue/Untitled.html">
+            
+                    
+                    Untitled
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" >
+            
+                <span>
+            
+                    
+                    Vue3
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.2.1" data-path="../../Front/Vue/vue3/vue3.html">
+            
+                <a href="../../Front/Vue/vue3/vue3.html">
+            
+                    
+                    Vue3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="../../Front/Vue/vuex.html">
+            
+                <a href="../../Front/Vue/vuex.html">
+            
+                    
+                    Vuex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.4" >
+            
+                <span>
+            
+                    
+                    Wbs的Vue
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.4.1" data-path="../../Front/Vue/wbs的vue/Vue模块篇.html">
+            
+                <a href="../../Front/Vue/wbs的vue/Vue模块篇.html">
+            
+                    
+                    Vue模块篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.4.2" >
+            
+                <span>
+            
+                    
+                    Assest
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.4.3" >
+            
+                <span>
+            
+                    
+                    Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.4.4" data-path="../../Front/Vue/wbs的vue/vue基础篇.html">
+            
+                <a href="../../Front/Vue/wbs的vue/vue基础篇.html">
+            
+                    
+                    Vue基础篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.4.5" data-path="../../Front/Vue/wbs的vue/vue进阶篇.html">
+            
+                <a href="../../Front/Vue/wbs的vue/vue进阶篇.html">
+            
+                    
+                    Vue进阶篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.5" data-path="../../Front/Vue/基础.html">
+            
+                <a href="../../Front/Vue/基础.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.6" data-path="../../Front/Vue/技巧.html">
+            
+                <a href="../../Front/Vue/技巧.html">
+            
+                    
+                    技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.7" data-path="../../Front/Vue/模板.html">
+            
+                <a href="../../Front/Vue/模板.html">
+            
+                    
+                    模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.8" data-path="../../Front/Vue/进阶.html">
+            
+                <a href="../../Front/Vue/进阶.html">
+            
+                    
+                    进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" >
+            
+                <span>
+            
+                    
+                    Image
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" >
+            
+                <span>
+            
+                    
+                    拓展
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.7.1" data-path="../../Front/拓展/webpack.html">
+            
+                <a href="../../Front/拓展/webpack.html">
+            
+                    
+                    Webpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" >
+            
+                <span>
+            
+                    
+                    未完成
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.8.1" >
+            
+                <span>
+            
+                    
+                    AJAX
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.8.1.1" data-path="../../Front/未完成/AJAX/PHP.html">
+            
+                <a href="../../Front/未完成/AJAX/PHP.html">
+            
+                    
+                    PHP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.1.2" data-path="../../Front/未完成/AJAX/配置.html">
+            
+                <a href="../../Front/未完成/AJAX/配置.html">
+            
+                    
+                    配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.2" >
+            
+                <span>
+            
+                    
+                    MongoDB
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.8.2.1" data-path="../../Front/未完成/MongoDB/入门.html">
+            
+                <a href="../../Front/未完成/MongoDB/入门.html">
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.3" >
+            
+                <span>
+            
+                    
+                    微信小程序
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.8.3.1" data-path="../../Front/未完成/微信小程序/全局信息.html">
+            
+                <a href="../../Front/未完成/微信小程序/全局信息.html">
+            
+                    
+                    全局信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.3.2" data-path="../../Front/未完成/微信小程序/喵喵开发.html">
+            
+                <a href="../../Front/未完成/微信小程序/喵喵开发.html">
+            
+                    
+                    喵喵开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.3.3" data-path="../../Front/未完成/微信小程序/学习.html">
+            
+                <a href="../../Front/未完成/微信小程序/学习.html">
+            
+                    
+                    学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.3.4" data-path="../../Front/未完成/微信小程序/设计.html">
+            
+                <a href="../../Front/未完成/微信小程序/设计.html">
+            
+                    
+                    设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">GO</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../GO/起步.html">
+            
+                <a href="../../GO/起步.html">
+            
+                    
+                    起步
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Java</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../../Java/Android/AndroidStudy.html">
+            
+                <a href="../../Java/Android/AndroidStudy.html">
+            
+                    
+                    AndroidStudy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <span>
+            
+                    
+                    Project
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../../Java/Project/Health.html">
+            
+                <a href="../../Java/Project/Health.html">
+            
+                    
+                    Health
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../../Java/Project/expertion.html">
+            
+                <a href="../../Java/Project/expertion.html">
+            
+                    
+                    Expertion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" >
+            
+                <span>
+            
+                    
+                    SQL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" >
+            
+                <span>
+            
+                    
+                    MySQL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1.1" data-path="../../Java/SQL/MySQL/Mysql基本语句.html">
+            
+                <a href="../../Java/SQL/MySQL/Mysql基本语句.html">
+            
+                    
+                    Mysql基本语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.1.2" >
+            
+                <span>
+            
+                    
+                    Images
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.1.3" data-path="../../Java/SQL/MySQL/mysql的存储和触发器.html">
+            
+                <a href="../../Java/SQL/MySQL/mysql的存储和触发器.html">
+            
+                    
+                    Mysql的存储和触发器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.1.4" data-path="../../Java/SQL/MySQL/mysql练习2020.01.html">
+            
+                <a href="../../Java/SQL/MySQL/mysql练习2020.01.html">
+            
+                    
+                    Mysql练习2020.01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.1.5" data-path="../../Java/SQL/MySQL/mysql高级.html">
+            
+                <a href="../../Java/SQL/MySQL/mysql高级.html">
+            
+                    
+                    Mysql高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.1.6" data-path="../../Java/SQL/MySQL/关于my文件的优化.html">
+            
+                <a href="../../Java/SQL/MySQL/关于my文件的优化.html">
+            
+                    
+                    关于My文件的优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.1.7" data-path="../../Java/SQL/MySQL/视图.html">
+            
+                <a href="../../Java/SQL/MySQL/视图.html">
+            
+                    
+                    视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="../../Java/SQL/ORACLE.html">
+            
+                <a href="../../Java/SQL/ORACLE.html">
+            
+                    
+                    ORACLE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3" >
+            
+                <span>
+            
+                    
+                    NoSQL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.3.1" data-path="../../Java/SQL/noSQL/redis.html">
+            
+                <a href="../../Java/SQL/noSQL/redis.html">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4" >
+            
+                <span>
+            
+                    
+                    连接池
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.4.1" data-path="../../Java/SQL/连接池/C3P0.html">
+            
+                <a href="../../Java/SQL/连接池/C3P0.html">
+            
+                    
+                    C3P0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.2" data-path="../../Java/SQL/连接池/JDBC.html">
+            
+                <a href="../../Java/SQL/连接池/JDBC.html">
+            
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" >
+            
+                <span>
+            
+                    
+                    SSM
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="../../Java/SSM/Docker.html">
+            
+                <a href="../../Java/SSM/Docker.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.2" data-path="../../Java/SSM/DockereMaven.html">
+            
+                <a href="../../Java/SSM/DockereMaven.html">
+            
+                    
+                    DockereMaven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.3" data-path="../../Java/SSM/MyBatis.html">
+            
+                <a href="../../Java/SSM/MyBatis.html">
+            
+                    
+                    MyBatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.4" data-path="../../Java/SSM/MyBatis3.html">
+            
+                <a href="../../Java/SSM/MyBatis3.html">
+            
+                    
+                    MyBatis3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.5" data-path="../../Java/SSM/Spring.html">
+            
+                <a href="../../Java/SSM/Spring.html">
+            
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.6" data-path="../../Java/SSM/Spring3.html">
+            
+                <a href="../../Java/SSM/Spring3.html">
+            
+                    
+                    Spring3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.7" data-path="../../Java/SSM/SpringMVC.html">
+            
+                <a href="../../Java/SSM/SpringMVC.html">
+            
+                    
+                    SpringMVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.8" data-path="../../Java/SSM/SpringMVC3.html">
+            
+                <a href="../../Java/SSM/SpringMVC3.html">
+            
+                    
+                    SpringMVC3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.9" data-path="../../Java/SSM/XML.html">
+            
+                <a href="../../Java/SSM/XML.html">
+            
+                    
+                    XML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.10" >
+            
+                <span>
+            
+                    
+                    Image
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.10.1" >
+            
+                <span>
+            
+                    
+                    Docker
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.10.2" >
+            
+                <span>
+            
+                    
+                    DockerMaven
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.10.3" >
+            
+                <span>
+            
+                    
+                    SSM
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.10.4" >
+            
+                <span>
+            
+                    
+                    Lucene
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.11" data-path="../../Java/SSM/lucene.html">
+            
+                <a href="../../Java/SSM/lucene.html">
+            
+                    
+                    Lucene
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.12" data-path="../../Java/SSM/maven.html">
+            
+                <a href="../../Java/SSM/maven.html">
+            
+                    
+                    Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.13" data-path="../../Java/SSM/mybatis-plus.html">
+            
+                <a href="../../Java/SSM/mybatis-plus.html">
+            
+                    
+                    Mybatis Plus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.14" data-path="../../Java/SSM/test(cach">
+            
+                <span>
+            
+                    
+                    Test(Cach)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.15" data-path="../../Java/SSM/论mvc.html">
+            
+                <a href="../../Java/SSM/论mvc.html">
+            
+                    
+                    论Mvc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" >
+            
+                <span>
+            
+                    
+                    Spring
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.5.1" data-path="../../Java/Spring/Atguigu SpringBoot.html">
+            
+                <a href="../../Java/Spring/Atguigu SpringBoot.html">
+            
+                    
+                    Atguigu SpringBoot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.2" data-path="../../Java/Spring/Dubbo.html">
+            
+                <a href="../../Java/Spring/Dubbo.html">
+            
+                    
+                    Dubbo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.3" data-path="../../Java/Spring/JPA.html">
+            
+                <a href="../../Java/Spring/JPA.html">
+            
+                    
+                    JPA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.4" data-path="../../Java/Spring/SpringBoot.html">
+            
+                <a href="../../Java/Spring/SpringBoot.html">
+            
+                    
+                    SpringBoot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.5" data-path="../../Java/Spring/SpringCloud.html">
+            
+                <a href="../../Java/Spring/SpringCloud.html">
+            
+                    
+                    SpringCloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.6" data-path="../../Java/Spring/blog.html">
+            
+                <a href="../../Java/Spring/blog.html">
+            
+                    
+                    Blog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.7" >
+            
+                <span>
+            
+                    
+                    Image
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.5.7.1" >
+            
+                <span>
+            
+                    
+                    SpringBoot
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.7.2" >
+            
+                <span>
+            
+                    
+                    Springcloud
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.8" data-path="../../Java/Spring/临时文件.html">
+            
+                <a href="../../Java/Spring/临时文件.html">
+            
+                    
+                    临时文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" >
+            
+                <span>
+            
+                    
+                    Web
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.6.1" data-path="../../Java/Web/Http协议.html">
+            
+                <a href="../../Java/Web/Http协议.html">
+            
+                    
+                    Http协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.2" data-path="../../Java/Web/JSP.html">
+            
+                <a href="../../Java/Web/JSP.html">
+            
+                    
+                    JSP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.3" data-path="../../Java/Web/Servlet.html">
+            
+                <a href="../../Java/Web/Servlet.html">
+            
+                    
+                    Servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.4" data-path="../../Java/Web/Web.html">
+            
+                <a href="../../Java/Web/Web.html">
+            
+                    
+                    Web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.5" data-path="../../Java/Web/xml笔记.html">
+            
+                <a href="../../Java/Web/xml笔记.html">
+            
+                    
+                    Xml笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.6" data-path="../../Java/Web/复习文件.html">
+            
+                <a href="../../Java/Web/复习文件.html">
+            
+                    
+                    复习文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" >
+            
+                <span>
+            
+                    
+                    Image
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.7.1" >
+            
+                <span>
+            
+                    
+                    Spring
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7.2" >
+            
+                <span>
+            
+                    
+                    Ssm
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="../../Java/杂学.html">
+            
+                <a href="../../Java/杂学.html">
+            
+                    
+                    杂学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" >
+            
+                <span>
+            
+                    
+                    结构
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.9.1" >
+            
+                <span>
+            
+                    
+                    JVM
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.9.1.1" data-path="../../Java/结构/JVM/JVM_01 简介.html">
+            
+                <a href="../../Java/结构/JVM/JVM_01 简介.html">
+            
+                    
+                    JVM 01 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.1.2" data-path="../../Java/结构/JVM/JVM_02 类加载子系统.html">
+            
+                <a href="../../Java/结构/JVM/JVM_02 类加载子系统.html">
+            
+                    
+                    JVM 02 类加载子系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.1.3" >
+            
+                <span>
+            
+                    
+                    Images
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.1.4" data-path="../../Java/结构/JVM/">
+            
+                <a href="../../Java/结构/JVM/">
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.2" data-path="../../Java/结构/Java Advance.html">
+            
+                <a href="../../Java/结构/Java Advance.html">
+            
+                    
+                    Java Advance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.3" >
+            
+                <span>
+            
+                    
+                    Image
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.4" >
+            
+                <span>
+            
+                    
+                    算法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.9.4.1" data-path="../../Java/结构/算法/01链表.html">
+            
+                <a href="../../Java/结构/算法/01链表.html">
+            
+                    
+                    01链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.4.2" data-path="../../Java/结构/算法/06树.html">
+            
+                <a href="../../Java/结构/算法/06树.html">
+            
+                    
+                    06树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.4.3" data-path="../../Java/结构/算法/07平衡二叉树.html">
+            
+                <a href="../../Java/结构/算法/07平衡二叉树.html">
+            
+                    
+                    07平衡二叉树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.4.4" data-path="../../Java/结构/算法/08B树.html">
+            
+                <a href="../../Java/结构/算法/08B树.html">
+            
+                    
+                    08B树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.4.5" data-path="../../Java/结构/算法/08红黑树.html">
+            
+                <a href="../../Java/结构/算法/08红黑树.html">
+            
+                    
+                    08红黑树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.4.6" data-path="../../Java/结构/算法/14 排序.html">
+            
+                <a href="../../Java/结构/算法/14 排序.html">
+            
+                    
+                    14 排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.4.7" data-path="../../Java/结构/算法/15并查集.html">
+            
+                <a href="../../Java/结构/算法/15并查集.html">
+            
+                    
+                    15并查集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.4.8" data-path="../../Java/结构/算法/16 图.html">
+            
+                <a href="../../Java/结构/算法/16 图.html">
+            
+                    
+                    16 图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.4.9" data-path="../../Java/结构/算法/17 策略.html">
+            
+                <a href="../../Java/结构/算法/17 策略.html">
+            
+                    
+                    17 策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.4.10" data-path="../../Java/结构/算法/mothed.html">
+            
+                <a href="../../Java/结构/算法/mothed.html">
+            
+                    
+                    Mothed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.4.11" data-path="../../Java/结构/算法/哈希值.html">
+            
+                <a href="../../Java/结构/算法/哈希值.html">
+            
+                    
+                    哈希值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.4.12" data-path="../../Java/结构/算法/堆.html">
+            
+                <a href="../../Java/结构/算法/堆.html">
+            
+                    
+                    堆
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.4.13" data-path="../../Java/结构/算法/总结构.html">
+            
+                <a href="../../Java/结构/算法/总结构.html">
+            
+                    
+                    总结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.5" >
+            
+                <span>
+            
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.9.5.1" data-path="../../Java/结构/设计模式/03创建型模式.html">
+            
+                <a href="../../Java/结构/设计模式/03创建型模式.html">
+            
+                    
+                    03创建型模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.5.2" data-path="../../Java/结构/设计模式/04结构型模式.html">
+            
+                <a href="../../Java/结构/设计模式/04结构型模式.html">
+            
+                    
+                    04结构型模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.5.3" data-path="../../Java/结构/设计模式/设计原则.html">
+            
+                <a href="../../Java/结构/设计模式/设计原则.html">
+            
+                    
+                    设计原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9.5.4" data-path="../../Java/结构/设计模式/设计模式.html">
+            
+                <a href="../../Java/结构/设计模式/设计模式.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Python</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../Python/基础.html">
+            
+                <a href="../../Python/基础.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >011.成最多水的容器</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>011</p>
+<p>&#x7ED9;&#x4F60; n &#x4E2A;&#x975E;&#x8D1F;&#x6574;&#x6570; a1&#xFF0C;a2&#xFF0C;...&#xFF0C;an&#xFF0C;&#x6BCF;&#x4E2A;&#x6570;&#x4EE3;&#x8868;&#x5750;&#x6807;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x70B9; (i, ai) &#x3002;&#x5728;&#x5750;&#x6807;&#x5185;&#x753B; n &#x6761;&#x5782;&#x76F4;&#x7EBF;&#xFF0C;&#x5782;&#x76F4;&#x7EBF; i &#x7684;&#x4E24;&#x4E2A;&#x7AEF;&#x70B9;&#x5206;&#x522B;&#x4E3A; (i, ai) &#x548C; (i, 0)&#x3002;&#x627E;&#x51FA;&#x5176;&#x4E2D;&#x7684;&#x4E24;&#x6761;&#x7EBF;&#xFF0C;&#x4F7F;&#x5F97;&#x5B83;&#x4EEC;&#x4E0E; x &#x8F74;&#x5171;&#x540C;&#x6784;&#x6210;&#x7684;&#x5BB9;&#x5668;&#x53EF;&#x4EE5;&#x5BB9;&#x7EB3;&#x6700;&#x591A;&#x7684;&#x6C34;&#x3002;</p>
+<p>&#x8BF4;&#x660E;&#xFF1A;&#x4F60;&#x4E0D;&#x80FD;&#x503E;&#x659C;&#x5BB9;&#x5668;&#xFF0C;&#x4E14; n &#x7684;&#x503C;&#x81F3;&#x5C11;&#x4E3A; 2&#x3002;</p>
+<p><img src="https://aliyun-lc-upload.oss-cn-hangzhou.aliyuncs.com/aliyun-lc-upload/uploads/2018/07/25/question_11.jpg" alt="img"></p>
+<p>&#x56FE;&#x4E2D;&#x5782;&#x76F4;&#x7EBF;&#x4EE3;&#x8868;&#x8F93;&#x5165;&#x6570;&#x7EC4; [1,8,6,2,5,4,8,3,7]&#x3002;&#x5728;&#x6B64;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5BB9;&#x5668;&#x80FD;&#x591F;&#x5BB9;&#x7EB3;&#x6C34;&#xFF08;&#x8868;&#x793A;&#x4E3A;&#x84DD;&#x8272;&#x90E8;&#x5206;&#xFF09;&#x7684;&#x6700;&#x5927;&#x503C;&#x4E3A; 49&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<p>&#x8F93;&#x5165;&#xFF1A;[1,8,6,2,5,4,8,3,7]
+&#x8F93;&#x51FA;&#xFF1A;49</p>
+<h3 id="&#x89E3;&#x7B54;">&#x89E3;&#x7B54;</h3>
+<ol>
+<li><p>&#x4E00;&#x822C;&#x65B9;&#x6CD5;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">maxArea</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> height<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> max <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> temp<span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>height<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> height<span class="token punctuation">.</span>length<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                temp <span class="token operator">=</span> <span class="token punctuation">(</span>j<span class="token operator">-</span>i<span class="token punctuation">)</span><span class="token operator">*</span><span class="token punctuation">(</span>height<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">&lt;</span>height<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">?</span>height<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">:</span> height<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>max<span class="token operator">&lt;</span>temp<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    max <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> max<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6539;&#x8FDB;&#xFF1A;</p>
+<ol>
+<li>&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x4E4B;&#x540E;&#x5C0F;&#x7684;&#x6570;&#x5B57;&#x4F5C;&#x6BD4;&#x8F83;</li>
+</ol>
+</li>
+<li><p>&#x901A;&#x8FC7;&#x5DE6;&#x53F3;&#x7C7B;&#x4F3C;&#x5FEB;&#x6392;&#x65B9;&#x5F0F;&#x627E;</p>
+<blockquote>
+<p>&#x56E0;&#x4E3A;&#x80AF;&#x5B9A;&#x662F;&#x5E95;&#x8FB9;&#x8D8A;&#x957F;&#x5C31;&#x8D8A;&#x662F;&#x6700;&#x5927;&#x7684;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5DE6;&#x53F3;&#x770B;&#x770B;&#x6700;&#x5927;&#x503C;</p>
+</blockquote>
+<p>java&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">maxArea</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> height<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> max <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> temp<span class="token punctuation">;</span>
+        <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span>j <span class="token operator">=</span> height<span class="token punctuation">.</span>length<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>i<span class="token operator">!=</span>j<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>height<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">&lt;</span>height<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                temp <span class="token operator">=</span> height<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">*</span><span class="token punctuation">(</span>j<span class="token operator">-</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                i<span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+                temp <span class="token operator">=</span> height<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">*</span><span class="token punctuation">(</span>j<span class="token operator">-</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                j<span class="token operator">--</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token keyword">if</span><span class="token punctuation">(</span>max<span class="token operator">&lt;</span>temp<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                max<span class="token operator">=</span>temp<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> max<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>C++&#xFF1A;</p>
+<pre class="language-"><code class="lang-c++">class Solution {
+public:
+    int maxArea(vector<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span>&amp; height) {
+        int max = 0;
+        int temp;
+        int i=0,j=height.size()-1;
+        while(i!=j){
+            if(height[i]&lt;height[j]){
+                temp = height[i]*(j-i);
+                i++;
+            }else {
+                temp = height[j]*(j-i);
+                j--;
+            }
+
+            if(max&lt;temp){
+                max=temp;
+            }
+        }
+        return max;
+    }
+};
+</code></pre>
+</li>
+</ol>
+<p>   &#x5148;&#x6392;&#x5E8F;&#x7136;&#x540E;&#x6839;&#x636E;&#x7D22;&#x5F15;&#x4E0E;&#x6700;&#x8FDC;&#x8DDD;&#x79BB;&#x9AD8;&#x7684;&#x8FDB;&#x884C;&#x6392;&#x5E8F;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="015. 三数之和.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 015. 三数之和">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"011.成最多水的容器","level":"2.1.1","depth":2,"next":{"title":"015. 三数之和","level":"2.1.2","depth":2,"path":"Common/Leetcode/015. 三数之和.md","ref":"Common/Leetcode/015. 三数之和.md","articles":[]},"previous":{"title":"Leetcode","level":"2.1","depth":1,"ref":"","articles":[{"title":"011.成最多水的容器","level":"2.1.1","depth":2,"path":"Common/Leetcode/011.成最多水的容器.md","ref":"Common/Leetcode/011.成最多水的容器.md","articles":[]},{"title":"015. 三数之和","level":"2.1.2","depth":2,"path":"Common/Leetcode/015. 三数之和.md","ref":"Common/Leetcode/015. 三数之和.md","articles":[]},{"title":"025. K 个一组翻转链表","level":"2.1.3","depth":2,"path":"Common/Leetcode/025. K 个一组翻转链表.md","ref":"Common/Leetcode/025. K 个一组翻转链表.md","articles":[]},{"title":"239","level":"2.1.4","depth":2,"path":"Common/Leetcode/239.md","ref":"Common/Leetcode/239.md","articles":[]},{"title":"239.滑动窗口最大值","level":"2.1.5","depth":2,"path":"Common/Leetcode/239.滑动窗口最大值.md","ref":"Common/Leetcode/239.滑动窗口最大值.md","articles":[]},{"title":"283移动零","level":"2.1.6","depth":2,"path":"Common/Leetcode/283移动零.md","ref":"Common/Leetcode/283移动零.md","articles":[]},{"title":"84.柱状图中最大矩形","level":"2.1.7","depth":2,"path":"Common/Leetcode/84.柱状图中最大矩形.md","ref":"Common/Leetcode/84.柱状图中最大矩形.md","articles":[]},{"title":"Array","level":"2.1.8","depth":2,"ref":"","articles":[{"title":"11.盛最多水的容器","level":"2.1.8.1","depth":3,"path":"Common/Leetcode/Array/11.盛最多水的容器.md","ref":"Common/Leetcode/Array/11.盛最多水的容器.md","articles":[]},{"title":"121.买卖股票的最佳时机","level":"2.1.8.2","depth":3,"path":"Common/Leetcode/Array/121.买卖股票的最佳时机.md","ref":"Common/Leetcode/Array/121.买卖股票的最佳时机.md","articles":[]},{"title":"122.买卖股票的最佳时机","level":"2.1.8.3","depth":3,"path":"Common/Leetcode/Array/122.买卖股票的最佳时机.md","ref":"Common/Leetcode/Array/122.买卖股票的最佳时机.md","articles":[]},{"title":"123.买股票的最佳时机","level":"2.1.8.4","depth":3,"path":"Common/Leetcode/Array/123.买股票的最佳时机.md","ref":"Common/Leetcode/Array/123.买股票的最佳时机.md","articles":[]},{"title":"128.最长连续排序","level":"2.1.8.5","depth":3,"path":"Common/Leetcode/Array/128.最长连续排序.md","ref":"Common/Leetcode/Array/128.最长连续排序.md","articles":[]},{"title":"134.加油站","level":"2.1.8.6","depth":3,"path":"Common/Leetcode/Array/134.加油站.md","ref":"Common/Leetcode/Array/134.加油站.md","articles":[]},{"title":"164.最大间距","level":"2.1.8.7","depth":3,"path":"Common/Leetcode/Array/164.最大间距.md","ref":"Common/Leetcode/Array/164.最大间距.md","articles":[]},{"title":"189旋转数组","level":"2.1.8.8","depth":3,"path":"Common/Leetcode/Array/189旋转数组.md","ref":"Common/Leetcode/Array/189旋转数组.md","articles":[]},{"title":"217.存在重复元素","level":"2.1.8.9","depth":3,"path":"Common/Leetcode/Array/217.存在重复元素.md","ref":"Common/Leetcode/Array/217.存在重复元素.md","articles":[]},{"title":"26.删除排序数组中的重复项","level":"2.1.8.10","depth":3,"path":"Common/Leetcode/Array/26.删除排序数组中的重复项.md","ref":"Common/Leetcode/Array/26.删除排序数组中的重复项.md","articles":[]},{"title":"27.移除元素","level":"2.1.8.11","depth":3,"path":"Common/Leetcode/Array/27.移除元素.md","ref":"Common/Leetcode/Array/27.移除元素.md","articles":[]},{"title":"274.H指数","level":"2.1.8.12","depth":3,"path":"Common/Leetcode/Array/274.H指数.md","ref":"Common/Leetcode/Array/274.H指数.md","articles":[]},{"title":"287.寻找重复数","level":"2.1.8.13","depth":3,"path":"Common/Leetcode/Array/287.寻找重复数.md","ref":"Common/Leetcode/Array/287.寻找重复数.md","articles":[]},{"title":"299.猜数字游戏","level":"2.1.8.14","depth":3,"path":"Common/Leetcode/Array/299.猜数字游戏.md","ref":"Common/Leetcode/Array/299.猜数字游戏.md","articles":[]},{"title":"327.区间的个数","level":"2.1.8.15","depth":3,"path":"Common/Leetcode/Array/327.区间的个数.md","ref":"Common/Leetcode/Array/327.区间的个数.md","articles":[]},{"title":"334.递增的三元序列","level":"2.1.8.16","depth":3,"path":"Common/Leetcode/Array/334.递增的三元序列.md","ref":"Common/Leetcode/Array/334.递增的三元序列.md","articles":[]},{"title":"41.缺失的第一个正数","level":"2.1.8.17","depth":3,"path":"Common/Leetcode/Array/41.缺失的第一个正数.md","ref":"Common/Leetcode/Array/41.缺失的第一个正数.md","articles":[]},{"title":"42.接雨水","level":"2.1.8.18","depth":3,"path":"Common/Leetcode/Array/42.接雨水.md","ref":"Common/Leetcode/Array/42.接雨水.md","articles":[]},{"title":"45.跳跃游戏","level":"2.1.8.19","depth":3,"path":"Common/Leetcode/Array/45.跳跃游戏.md","ref":"Common/Leetcode/Array/45.跳跃游戏.md","articles":[]},{"title":"55.跳跃游戏","level":"2.1.8.20","depth":3,"path":"Common/Leetcode/Array/55.跳跃游戏.md","ref":"Common/Leetcode/Array/55.跳跃游戏.md","articles":[]},{"title":"80.删除排序数组中的重复项","level":"2.1.8.21","depth":3,"path":"Common/Leetcode/Array/80.删除排序数组中的重复项.md","ref":"Common/Leetcode/Array/80.删除排序数组中的重复项.md","articles":[]},{"title":"付费","level":"2.1.8.22","depth":3,"path":"Common/Leetcode/Array/付费.md","ref":"Common/Leetcode/Array/付费.md","articles":[]}]},{"title":"Tree","level":"2.1.9","depth":2,"ref":"","articles":[{"title":"102.二叉树的层级遍历","level":"2.1.9.1","depth":3,"path":"Common/Leetcode/Tree/102.二叉树的层级遍历.md","ref":"Common/Leetcode/Tree/102.二叉树的层级遍历.md","articles":[]},{"title":"144.二叉树的前序遍历","level":"2.1.9.2","depth":3,"path":"Common/Leetcode/Tree/144.二叉树的前序遍历.md","ref":"Common/Leetcode/Tree/144.二叉树的前序遍历.md","articles":[]},{"title":"145.二叉树的后序遍历","level":"2.1.9.3","depth":3,"path":"Common/Leetcode/Tree/145.二叉树的后序遍历.md","ref":"Common/Leetcode/Tree/145.二叉树的后序遍历.md","articles":[]},{"title":"94,二叉树的中序遍历","level":"2.1.9.4","depth":3,"path":"Common/Leetcode/Tree/94,二叉树的中序遍历.md","ref":"Common/Leetcode/Tree/94,二叉树的中序遍历.md","articles":[]}]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toc","summary","accordion","prism","-highlight","expandable-chapters","theme-comscore"],"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"summary":{},"toc":{},"accordion":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Common/Leetcode/011.成最多水的容器.md","mtime":"2021-01-31T01:15:51.412Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-01T02:18:32.396Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

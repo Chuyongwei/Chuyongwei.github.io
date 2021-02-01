@@ -1,0 +1,9 @@
+.pdf
+.docx
+.doc
+.html
+# */.git/
+
+/Temp/
+node_modules/
+_book/
